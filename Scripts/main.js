@@ -1,3 +1,7 @@
+/**
+ *  Autor: Ignacio Carmona González
+ *  Github: https://github.com/IgnacioCG28/ExamenDWEC_DIW_Tema4.git
+ */
 import { Vehiculo } from "./vehiculo.js";
 import { AutomovilDeportivo } from "./AutomovilDeportivo.js";
 
@@ -73,4 +77,4 @@ localStorage.removeItem("modelo");
 localStorage.removeItem("potenciaMotor")
 
 // Ejer 4.4
-localStorage.clear();
+// localStorage.clear();
