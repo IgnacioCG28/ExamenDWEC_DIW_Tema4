@@ -9,6 +9,7 @@ export function mostrarResult(text) {
   resultContainer.innerHTML += `<p>${text}</p>`;
 }
 
+mostrarResult ("<h1>Exámen DWEC y DIW ICG</h1>")
 // Vehiculo
 const vehiculo1 = new Vehiculo("BMW", "CLK", "Rojo", 1992, 2400);
 mostrarResult("<h2>Vehiculo 1</h2>");
@@ -31,6 +32,7 @@ localStorage.setItem("Vehiculo", JSON.stringify(vehiculoObject));
 
 // Ejer 3.3
 console.log(JSON.parse(localStorage.getItem("Vehiculo")));
+console.log(localStorage.getItem("Vehiculo"))
 
 //Deportivo
 

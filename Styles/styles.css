@@ -16,6 +16,9 @@ body{
     background-image: url(/Assets/BG/1.PNG);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 *,
@@ -25,46 +28,56 @@ body{
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-family: 'W95FA','Times New Roman', Times, serif;    
+    animation: colours 3s ease-in-out infinite;
+    text-decoration: underline;
+
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 /* pseudoselector que al pasar raton por encima cambia de color*/
 h2:hover{
-    color: rgb(0, 255, 38);
+    animation: colours 2s linear infinite;
+    cursor: pointer;
 }
 
 p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0;
-    overflow: hidden;
-    animation: escribir 1s steps(30), parpadeo 1s step-end infinite;
 }
 
-/* Selector modifico los párrafos dentro de los DIV*/
-div h1{
-    background-color: white;
-    width: 500px;
-    box-shadow: 10px 15px 15px black;
-}
-
-.centered{
+div{
     display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
+    align-items: center;
+    background: linear-gradient();
+    width: 500px;
+    height: 500px auto;
+    box-shadow: 10px 15px 15px black;
+    margin-top: 50px;
+
 }
 
+p:hover{
+    animation: colours 2s linear infinite;
+    cursor: pointer;
+}
 
-  @keyframes escribir{
-    from { width: 0 }
+  @keyframes colours{
+    10%{color: red;}
+    22%{color:blue }
+    44%{color: purple;}
+    66%{color: orange;}
+    88%{color: aqua;}
+    100%{color: yellow;}
   }
   
-  @keyframes parpadeo {
-    50% { border-color: transparent }
-  }
   
 
 
