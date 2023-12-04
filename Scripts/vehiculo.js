@@ -1,4 +1,4 @@
-
+import { mostrarResult } from "./main.js";
 export class Vehiculo{
     #marca;
     #modelo;
@@ -16,28 +16,30 @@ export class Vehiculo{
 
     mostrarDatos(){
         const texto = `
-        La marca del vehiculo es ${marca} <br>
-        El modelo del vehículo es ${modelo} <br>
-        El color del vehículo es ${color} <br>
-        El año de fabricación es ${cilindrada}<br>
+        La marca del vehiculo es ${this.#marca} <br>
+        El modelo del vehículo es ${this.#modelo} <br>
+        El color del vehículo es ${this.#color} <br>
+        El año de fabricación es ${this.#añoFabricacion}<br>
+        La cilindrada es ${this.#cilindrada}
         `;
 
-        mostrarResultado(`${texto}`)
+        mostrarResult(`${texto}`)
     }
 
     acelerar(value){
          const speed = `Este vehiculo ha acelerado ${value} km/h`; 
-         return speed;
+         return mostrarResult(speed);
+
     }
 
     arrancar(){
         const start = "Este vehiculo ha arrancado"
-        return start;
+        return mostrarResult(start);
     }
 
     frenar(){
         const stop = "Este vehiculo ha parado"
-        return stop;
+        return mostrarResult(stop);
     }
 
     getMarca(){
