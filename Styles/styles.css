@@ -1,0 +1,58 @@
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+html{
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+/* pseudoselector que al pasar raton por encima cambia de color*/
+h2:hover{
+    color: rgb(0, 255, 38);
+}
+
+p{
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+/* Selector modifico los párrafos dentro de los DIV*/
+div p{
+    background-color: rgb(121, 120, 120);
+    width: 300px;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+

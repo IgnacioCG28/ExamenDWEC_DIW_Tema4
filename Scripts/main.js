@@ -68,6 +68,7 @@ for (let key in deportivoObject) {
 
 // Ejer 4.3
 localStorage.removeItem("modelo");
+localStorage.removeItem("potenciaMotor")
 
 // Ejer 4.4
-localStorage.clear();
+//localStorage.clear();
