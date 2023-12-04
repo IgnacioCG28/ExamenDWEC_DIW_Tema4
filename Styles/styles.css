@@ -11,14 +11,15 @@ html{
 
 body{
     box-sizing: border-box;
+    color: white;
     margin: 0;
-    white-space: nowrap;
-    background-image: url(/Assets/BG/1.PNG);
+    background-image: url(/Assets/BG/spaceBG.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 *,
@@ -37,9 +38,10 @@ h1{
 
 h2{
     font-size: 2.5rem;
+    text-decoration: underline;
 }
 
-/* pseudoselector que al pasar raton por encima cambia de color*/
+/* pseudoselector que al pasar raton por encima cambia de color, para hacerlo más divertido y llamativo*/
 h2:hover{
     animation: colours 2s linear infinite;
     cursor: pointer;
@@ -56,13 +58,15 @@ div{
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: linear-gradient();
     width: 500px;
     height: 500px auto;
-    box-shadow: 10px 15px 15px black;
+    box-shadow: 10px 15px 15px rgb(137, 136, 153);
     margin-top: 50px;
-
+    background: rgb(3,0,36);
+    background: linear-gradient(180deg, rgba(3,0,36,1) 0%, rgba(9,13,121,1) 80%, rgba(21,0,255,1) 100%);
+    border-radius: 10px;
 }
+    
 
 p:hover{
     animation: colours 2s linear infinite;

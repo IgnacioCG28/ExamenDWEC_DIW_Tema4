@@ -73,4 +73,4 @@ localStorage.removeItem("modelo");
 localStorage.removeItem("potenciaMotor")
 
 // Ejer 4.4
-//localStorage.clear();
+localStorage.clear();
