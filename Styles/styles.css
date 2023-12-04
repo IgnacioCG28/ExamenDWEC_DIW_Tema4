@@ -1,6 +1,6 @@
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: 'W95FA';
+    src: url(/Assets/Fonts/W95FA/w95fa.woff);
 }
 
 html{
@@ -13,7 +13,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     white-space: nowrap;
-    background-image: url();
+    background-image: url(/Assets/BG/1.PNG);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -26,9 +26,7 @@ body{
 
 h1{
     font-size: 3rem;
-    width: 21ch;
-    overflow: hidden;
-    animation: escribir 1s steps(30), parpadeo 1s step-end infinite;
+    font-family: 'W95FA','Times New Roman', Times, serif;    
 }
 
 h2{
@@ -43,6 +41,8 @@ h2:hover{
 p{
     font-size: 1.5rem;
     margin: 0;
+    overflow: hidden;
+    animation: escribir 1s steps(30), parpadeo 1s step-end infinite;
 }
 
 /* Selector modifico los párrafos dentro de los DIV*/
