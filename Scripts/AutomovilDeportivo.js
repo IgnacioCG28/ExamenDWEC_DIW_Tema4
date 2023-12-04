@@ -1,11 +1,11 @@
 import { mostrarResult } from "./main.js";
 import { Vehiculo } from "./vehiculo.js";
 
-class AutomovilDeportivo extends Vehiculo{
+export class AutomovilDeportivo extends Vehiculo{
     #potenciaMotor
 
-    constructor(modelo, color, añoFabricacion,cilindrada,potenciaMotor){
-        super(modelo,color,añoFabricacion,cilindrada);
+    constructor(marca,modelo, color, añoFabricacion,cilindrada,potenciaMotor){
+        super(marca,modelo,color,añoFabricacion,cilindrada);
         this.#potenciaMotor = potenciaMotor
     }
 
@@ -17,7 +17,7 @@ class AutomovilDeportivo extends Vehiculo{
 
     activarModoDeportivo(){
         const transformer = "Modo deportivo activado";
-        return transformer;
+        return mostrarResult(transformer)
     }
 
     getPotenciaMotor(){
